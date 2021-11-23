@@ -2,7 +2,7 @@
 //  NetworkRequestManager.swift
 //  TimesApp
 //
-//  Created by Dhiranjana Yadav on 3/11/21.
+//  Created by Dhiranjana Yadav on 22/11/21.
 //
 
 import Foundation
@@ -12,8 +12,8 @@ class NetworkRequestManager {
     
     private let defaultSession = URLSession(configuration: .default)
     private var dataTask: URLSessionDataTask?
-    
-    
+    static let shared = NetworkRequestManager()
+
     func getSectionData(completionHandler: @escaping (_ result:Results?, _ error: Error?) -> Void) {
         dataTask?.cancel()
         
@@ -35,7 +35,6 @@ class NetworkRequestManager {
               let response = response as? HTTPURLResponse,
               response.statusCode == 200 {
                 let decoder = JSONDecoder()
-              //  decoder.keyDecodingStrategy = .convertFromSnakeCase
                 do {
                     let resultdata = try decoder.decode(Results.self, from: data)
                     print(resultdata)
