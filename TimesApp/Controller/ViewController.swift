@@ -21,12 +21,14 @@ class ViewController: UIViewController, UITableViewDelegate {
         refreshControl.tintColor = UIColor.gray
         return refreshControl
     }()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SetUpTableView()
         self.timesTableView.reloadData()
         callToViewModelForUIUpdate()
+       
     }
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
@@ -36,6 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     //MARK:Update UI
     func SetUpTableView() {
+        timesTableView.tableFooterView = UIView()
         timesTableView.addSubview(refreshControl)
         timesTableView.register(UINib(nibName: TimesTableCell.reuseIdentifier, bundle:nil ), forCellReuseIdentifier: TimesTableCell.reuseIdentifier)
         timesTableView.register(UINib(nibName: NoDataTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: NoDataTableViewCell.reuseIdentifier)

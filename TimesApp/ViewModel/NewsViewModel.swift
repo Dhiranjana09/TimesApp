@@ -27,6 +27,7 @@ class NewsViewModel: NSObject {
         self.networkRequest.getSectionData { (results, error) in
             self.resultData =  results
         }
+       
     }
 }
 

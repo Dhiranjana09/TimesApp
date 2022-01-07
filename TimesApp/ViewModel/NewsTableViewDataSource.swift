@@ -28,6 +28,7 @@ class NewsTableViewDataSource<CELL : UITableViewCell,T> : NSObject, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CELL
+        cell.selectionStyle = .none
         if cellIdentifier != NoDataTableViewCell.reuseIdentifier {
             let item = self.items[indexPath.row]
             self.configureCell(cell, item)

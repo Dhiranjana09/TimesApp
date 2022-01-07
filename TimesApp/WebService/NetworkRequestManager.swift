@@ -16,6 +16,7 @@ class NetworkRequestManager: NSObject {
     private let urlString = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=sGecvmIXM2UIIH8QoGslprpSbAvWTqNi"
     
     func getSectionData(completionHandler: @escaping (_ result:Results?, _ error: Error?) -> Void) {
+        LoadingIndicator.showUniversalLoadingView(true, loadingText: "Loading Data..")
         dataTask?.cancel()
         guard let url = URL(string: urlString) else {
             return
@@ -25,7 +26,7 @@ class NetworkRequestManager: NSObject {
             defer {
                 self?.dataTask = nil
             }
-            
+            LoadingIndicator.showUniversalLoadingView(false)
             if let networkError = networkError {
                 completionHandler(nil, networkError)
             } else if
