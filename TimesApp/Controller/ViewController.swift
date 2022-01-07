@@ -13,6 +13,14 @@ class ViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var timesTableView: UITableView!
     private var newsdataModel: NewsViewModel!
     private var newsDataSource: NewsTableViewDataSource<TimesTableCell, Section>!
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:
+                                    #selector(ViewController.handleRefresh(_:)),
+                                 for: UIControl.Event.valueChanged)
+        refreshControl.tintColor = UIColor.gray
+        return refreshControl
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +28,15 @@ class ViewController: UIViewController, UITableViewDelegate {
         self.timesTableView.reloadData()
         callToViewModelForUIUpdate()
     }
+    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        self.callToViewModelForUIUpdate()
+        refreshControl.endRefreshing()
+    }
+    
     //MARK:Update UI
     func SetUpTableView() {
+        timesTableView.addSubview(refreshControl)
         timesTableView.register(UINib(nibName: TimesTableCell.reuseIdentifier, bundle:nil ), forCellReuseIdentifier: TimesTableCell.reuseIdentifier)
         timesTableView.register(UINib(nibName: NoDataTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: NoDataTableViewCell.reuseIdentifier)
     }
@@ -48,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         }
     }
 }
- //MARK: TableView Delegate Method
+//MARK: TableView Delegate Method
 extension ViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sf = SFSafariViewController(url:newsdataModel.resultData.results[indexPath.row].url)
