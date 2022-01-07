@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "40511569-0884-4890-B4AF-5D2063FF8EBA"
+            uuid = "63031205-6DB3-419C-BE27-73E3130E069B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkManager/NetworkRequestManager.swift"
+            filePath = "TimesApp/Controller/WKWebViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "getSectionData(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6BAB4BF2-98F3-472F-8490-9116E5B391AB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkManager/NetworkRequestManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "getSectionData(completionHandler:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "loadWebView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

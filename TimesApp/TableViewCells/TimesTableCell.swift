@@ -8,12 +8,17 @@
 import UIKit
 
 class TimesTableCell: UITableViewCell {
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var byLineLabel: UILabel!
     @IBOutlet weak var createdDateLabel: UILabel!
     static let reuseIdentifier  = "TimesTableCell"
-    var section = [Section]()
+    var section: Section? {
+        didSet{
+            titleLabel.text = section?.title
+            byLineLabel.text = section?.byline
+            createdDateLabel.text = section?.created_date
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,11 +26,5 @@ class TimesTableCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    }
-    
-    func configCell(with section:Section) -> Void {
-        titleLabel.text = section.title
-        byLineLabel.text = section.byline
-        createdDateLabel.text = section.created_date
     }
 }
