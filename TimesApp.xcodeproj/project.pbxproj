@@ -12,8 +12,6 @@
 		1E12F2FC274E927000924AB4 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F2FB274E927000924AB4 /* NewsViewModel.swift */; };
 		1E12F304274E95C000924AB4 /* NewsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F303274E95C000924AB4 /* NewsTableViewDataSource.swift */; };
 		1E12F320274FE76400924AB4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F31F274FE76400924AB4 /* Extensions.swift */; };
-		1E12F329274FF11C00924AB4 /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F327274FF11C00924AB4 /* NoDataTableViewCell.swift */; };
-		1E12F32A274FF11C00924AB4 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E12F328274FF11C00924AB4 /* NoDataTableViewCell.xib */; };
 		1EAA58EE2788A4DC00E8FC41 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA58ED2788A4DB00E8FC41 /* LoadingIndicator.swift */; };
 		1EBF8B662732C11900A3FFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8B652732C11900A3FFD5 /* AppDelegate.swift */; };
 		1EBF8B682732C11900A3FFD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8B672732C11900A3FFD5 /* SceneDelegate.swift */; };
@@ -22,21 +20,15 @@
 		1EBF8B6F2732C11A00A3FFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF8B6E2732C11A00A3FFD5 /* Assets.xcassets */; };
 		1EBF8B722732C11A00A3FFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF8B702732C11A00A3FFD5 /* LaunchScreen.storyboard */; };
 		1EBF8B7D2732C11A00A3FFD5 /* TimesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8B7C2732C11A00A3FFD5 /* TimesAppTests.swift */; };
-		1EBF8B882732C11A00A3FFD5 /* TimesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8B872732C11A00A3FFD5 /* TimesAppUITests.swift */; };
 		1EBF8B9A2732C18200A3FFD5 /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8B992732C18200A3FFD5 /* NetworkRequestManager.swift */; };
 		1EBF8BC72732C58F00A3FFD5 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8BC62732C58F00A3FFD5 /* Results.swift */; };
-		1EBF8BCC2732C60300A3FFD5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8BCB2732C60300A3FFD5 /* Section.swift */; };
+		1EBF8BCC2732C60300A3FFD5 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF8BCB2732C60300A3FFD5 /* Story.swift */; };
+		2EFCE0F6278C405900DC0BA2 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCE0F5278C405900DC0BA2 /* ViewModelTests.swift */; };
+		2EFCE0F8278C47FD00DC0BA2 /* sampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EFCE0F7278C47FD00DC0BA2 /* sampleResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1EBF8B792732C11A00A3FFD5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1EBF8B5A2732C11900A3FFD5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EBF8B612732C11900A3FFD5;
-			remoteInfo = TimesApp;
-		};
-		1EBF8B842732C11A00A3FFD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1EBF8B5A2732C11900A3FFD5 /* Project object */;
 			proxyType = 1;
@@ -51,8 +43,6 @@
 		1E12F2FB274E927000924AB4 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		1E12F303274E95C000924AB4 /* NewsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewDataSource.swift; sourceTree = "<group>"; };
 		1E12F31F274FE76400924AB4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		1E12F327274FF11C00924AB4 /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
-		1E12F328274FF11C00924AB4 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
 		1EAA58ED2788A4DB00E8FC41 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		1EBF8B622732C11900A3FFD5 /* TimesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBF8B652732C11900A3FFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +55,11 @@
 		1EBF8B782732C11A00A3FFD5 /* TimesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBF8B7C2732C11A00A3FFD5 /* TimesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesAppTests.swift; sourceTree = "<group>"; };
 		1EBF8B7E2732C11A00A3FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EBF8B832732C11A00A3FFD5 /* TimesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBF8B872732C11A00A3FFD5 /* TimesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesAppUITests.swift; sourceTree = "<group>"; };
-		1EBF8B892732C11A00A3FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EBF8B992732C18200A3FFD5 /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
 		1EBF8BC62732C58F00A3FFD5 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
-		1EBF8BCB2732C60300A3FFD5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		1EBF8BCB2732C60300A3FFD5 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		2EFCE0F5278C405900DC0BA2 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		2EFCE0F7278C47FD00DC0BA2 /* sampleResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +77,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBF8B802732C11A00A3FFD5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBF8BC62732C58F00A3FFD5 /* Results.swift */,
-				1EBF8BCB2732C60300A3FFD5 /* Section.swift */,
+				1EBF8BCB2732C60300A3FFD5 /* Story.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,7 +120,6 @@
 			children = (
 				1EBF8B642732C11900A3FFD5 /* TimesApp */,
 				1EBF8B7B2732C11A00A3FFD5 /* TimesAppTests */,
-				1EBF8B862732C11A00A3FFD5 /* TimesAppUITests */,
 				1EBF8B632732C11900A3FFD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,7 +129,6 @@
 			children = (
 				1EBF8B622732C11900A3FFD5 /* TimesApp.app */,
 				1EBF8B782732C11A00A3FFD5 /* TimesAppTests.xctest */,
-				1EBF8B832732C11A00A3FFD5 /* TimesAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,19 +154,12 @@
 		1EBF8B7B2732C11A00A3FFD5 /* TimesAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				2EFCE0F5278C405900DC0BA2 /* ViewModelTests.swift */,
 				1EBF8B7C2732C11A00A3FFD5 /* TimesAppTests.swift */,
+				2EFCE0F7278C47FD00DC0BA2 /* sampleResponse.json */,
 				1EBF8B7E2732C11A00A3FFD5 /* Info.plist */,
 			);
 			path = TimesAppTests;
-			sourceTree = "<group>";
-		};
-		1EBF8B862732C11A00A3FFD5 /* TimesAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1EBF8B872732C11A00A3FFD5 /* TimesAppUITests.swift */,
-				1EBF8B892732C11A00A3FFD5 /* Info.plist */,
-			);
-			path = TimesAppUITests;
 			sourceTree = "<group>";
 		};
 		1EBF8B982732C13F00A3FFD5 /* WebService */ = {
@@ -211,8 +184,6 @@
 			children = (
 				1E12F2D0274D3FE400924AB4 /* TimesTableCell.swift */,
 				1E12F2D1274D3FE400924AB4 /* TimesTableCell.xib */,
-				1E12F327274FF11C00924AB4 /* NoDataTableViewCell.swift */,
-				1E12F328274FF11C00924AB4 /* NoDataTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -255,24 +226,6 @@
 			productReference = 1EBF8B782732C11A00A3FFD5 /* TimesAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1EBF8B822732C11A00A3FFD5 /* TimesAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1EBF8B922732C11A00A3FFD5 /* Build configuration list for PBXNativeTarget "TimesAppUITests" */;
-			buildPhases = (
-				1EBF8B7F2732C11A00A3FFD5 /* Sources */,
-				1EBF8B802732C11A00A3FFD5 /* Frameworks */,
-				1EBF8B812732C11A00A3FFD5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1EBF8B852732C11A00A3FFD5 /* PBXTargetDependency */,
-			);
-			name = TimesAppUITests;
-			productName = TimesAppUITests;
-			productReference = 1EBF8B832732C11A00A3FFD5 /* TimesAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,10 +239,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					1EBF8B772732C11A00A3FFD5 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 1EBF8B612732C11900A3FFD5;
-					};
-					1EBF8B822732C11A00A3FFD5 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 1EBF8B612732C11900A3FFD5;
 					};
@@ -310,7 +259,6 @@
 			targets = (
 				1EBF8B612732C11900A3FFD5 /* TimesApp */,
 				1EBF8B772732C11A00A3FFD5 /* TimesAppTests */,
-				1EBF8B822732C11A00A3FFD5 /* TimesAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +272,6 @@
 				1E12F2D3274D3FE400924AB4 /* TimesTableCell.xib in Resources */,
 				1EBF8B6F2732C11A00A3FFD5 /* Assets.xcassets in Resources */,
 				1EBF8B6D2732C11A00A3FFD5 /* Main.storyboard in Resources */,
-				1E12F32A274FF11C00924AB4 /* NoDataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,13 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EBF8B812732C11A00A3FFD5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2EFCE0F8278C47FD00DC0BA2 /* sampleResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +296,8 @@
 				1E12F2D2274D3FE400924AB4 /* TimesTableCell.swift in Sources */,
 				1E12F304274E95C000924AB4 /* NewsTableViewDataSource.swift in Sources */,
 				1EBF8B6A2732C11A00A3FFD5 /* ViewController.swift in Sources */,
-				1E12F329274FF11C00924AB4 /* NoDataTableViewCell.swift in Sources */,
 				1EBF8B662732C11900A3FFD5 /* AppDelegate.swift in Sources */,
-				1EBF8BCC2732C60300A3FFD5 /* Section.swift in Sources */,
+				1EBF8BCC2732C60300A3FFD5 /* Story.swift in Sources */,
 				1EBF8B682732C11900A3FFD5 /* SceneDelegate.swift in Sources */,
 				1E12F320274FE76400924AB4 /* Extensions.swift in Sources */,
 				1EBF8BC72732C58F00A3FFD5 /* Results.swift in Sources */,
@@ -368,15 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFCE0F6278C405900DC0BA2 /* ViewModelTests.swift in Sources */,
 				1EBF8B7D2732C11A00A3FFD5 /* TimesAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EBF8B7F2732C11A00A3FFD5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EBF8B882732C11A00A3FFD5 /* TimesAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +320,6 @@
 			isa = PBXTargetDependency;
 			target = 1EBF8B612732C11900A3FFD5 /* TimesApp */;
 			targetProxy = 1EBF8B792732C11A00A3FFD5 /* PBXContainerItemProxy */;
-		};
-		1EBF8B852732C11A00A3FFD5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1EBF8B612732C11900A3FFD5 /* TimesApp */;
-			targetProxy = 1EBF8B842732C11A00A3FFD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -521,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -609,44 +537,6 @@
 			};
 			name = Release;
 		};
-		1EBF8B932732C11A00A3FFD5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TimesAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhiranjana.TimesAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimesApp;
-			};
-			name = Debug;
-		};
-		1EBF8B942732C11A00A3FFD5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TimesAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhiranjana.TimesAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimesApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -673,15 +563,6 @@
 			buildConfigurations = (
 				1EBF8B902732C11A00A3FFD5 /* Debug */,
 				1EBF8B912732C11A00A3FFD5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1EBF8B922732C11A00A3FFD5 /* Build configuration list for PBXNativeTarget "TimesAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EBF8B932732C11A00A3FFD5 /* Debug */,
-				1EBF8B942732C11A00A3FFD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

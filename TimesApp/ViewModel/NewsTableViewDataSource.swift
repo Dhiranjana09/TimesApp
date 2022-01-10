@@ -9,28 +9,33 @@ import Foundation
 import UIKit
 import SafariServices
 
-class NewsTableViewDataSource<CELL : UITableViewCell,T> : NSObject, UITableViewDataSource {
+class NewsTableViewDataSource<CELL : UITableViewCell> : NSObject, UITableViewDataSource {
     
-    private var cellIdentifier : String!
-    private var items : [T]!
-    var configureCell : (CELL, T) -> () = {_,_ in }
-    private var newsdataModel: NewsViewModel!
+    private var cellIdentifier : String
+    var configureCell : (CELL, Story) -> () = {_,_ in }
     
-    init(cellIdentifier : String, items : [T], configureCell : @escaping (CELL, T) -> ()) {
+    //MARK:VM should encapsulates the model data, not the DataSource
+    private var newsViewModel: NewsViewModel
+    
+    init(newsViewModel: NewsViewModel, cellIdentifier : String, configureCell : @escaping (CELL, Story) -> ()) {
+        self.newsViewModel = newsViewModel
         self.cellIdentifier = cellIdentifier
-        self.items =  items
         self.configureCell = configureCell
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return newsViewModel.numberOfSections
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  items.count > 0 ? items.count : 1
+        return newsViewModel.numberOfStories(inSection: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CELL
-        cell.selectionStyle = .none
-        if cellIdentifier != NoDataTableViewCell.reuseIdentifier {
-            let item = self.items[indexPath.row]
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CELL else { fatalError("Failed to deque Cell with id: \(String(describing: cellIdentifier))")}
+        
+        if let item = newsViewModel.story(atIndexPath: indexPath) {
             self.configureCell(cell, item)
         }
         return cell
